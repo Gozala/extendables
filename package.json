@@ -1,4 +1,5 @@
-{ "name": "extendables",
+{
+  "name": "extendables",
   "version": "0.1.0",
   "description": "Simple and elegant inheritance in JS.",
   "keywords": [ "oop", "inheritance", "class", "object-oriented", "klass" ],
@@ -27,8 +28,10 @@
   "scripts": {
     "test": "node test/test-extendables.js"
   },
-  "licenses": [ { "type" : "MPL 1.1/LGPL 2.1/GPL 2.0"
-    , "url" : "http://www.mozilla.org/MPL/"
+  "licenses": [
+    {
+      "type" : "MPL 1.1/LGPL 2.1/GPL 2.0",
+      "url" : "http://www.mozilla.org/MPL/"
     }
   ]
 }
