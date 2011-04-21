@@ -9,12 +9,11 @@
 
 exports["test basics"] = function(assert) {
   var Extendable = require("extendables").Extendable;
-  var Foo = Extendable.extend({
-    foo: 'foo'
-  });
+  var Foo = Extendable.extend({ foo: 'foo' });
+  Foo.self = function () { return this; };
   var Bar = Foo.extend({
     constructor: function Bar() {
-      this.bar = 'bar'
+      this.bar = 'bar';
     }
   });
   var Baz = Foo.extend({
@@ -32,11 +31,16 @@ exports["test basics"] = function(assert) {
             "derived class responds to instanceof");
   assert.equal((new Bar).bar, "bar",
                "constructor modifies instance even if it's not returned");
+  assert.ok(Bar.self, "static properties are inherited");
+  assert.equal(Bar.self(), Bar,
+               "static methods have access to the constructor");
   assert.ok(!(new Baz instanceof Baz),
             "constructor may return non instance");
   assert.deepEqual(new Baz, { x: 1, y: 2 },
                    "correct value retuned by custom consructor");
-
+  assert.ok(Baz.self, "inherited statics are inherited");
+  assert.equal(Baz.self(), Baz,
+               "inherited inherited properties have access to the constructor");
 };
 
 exports["test overridden properties"] = function(assert) {
