@@ -1,3 +1,5 @@
+(typeof define !== "function" ? function($){ $(require, exports, module); } : define)(function(require, exports, module, undefined) {
+
 "use strict";
 
 exports["test basics"] = function(assert) {
@@ -64,3 +66,5 @@ exports["test overridden properties"] = function(assert) {
 
 if (module == require.main)
   require("test").run(exports);
+
+});
