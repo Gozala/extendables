@@ -10,3 +10,7 @@
   - Bring AMD support for tests.
   - JSHint support.
   - Add support for inheriting static properties.
+
+## 0.1.2 / 2011-04-22 ##
+
+  - Now `extend` may be called without arguments.
