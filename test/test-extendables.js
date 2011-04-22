@@ -73,6 +73,15 @@ exports["test overridden properties"] = function(assert) {
 
 };
 
+exports["test argumentless"] = function(assert) {
+  var Extendable = require("extendables").Extendable;
+  var Base = Extendable.extend();
+  var bas = new Base;
+
+  assert.notEqual(Base, Extendable, "new constructor is created");
+  assert.equal(Base.extend, Extendable.extend, "statics are inherited");
+};
+
 if (module == require.main)
   require("test").run(exports);
 
