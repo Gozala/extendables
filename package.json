@@ -1,7 +1,7 @@
 {
   "name": "extendables",
   "id": "extendables",
-  "version": "0.1.1",
+  "version": "0.1.2",
   "description": "Simple and elegant inheritance in JS.",
   "keywords": [ "oop", "inheritance", "class", "object-oriented", "klass" ],
   "author": "Irakli Gozalishvili <rfobic@gmail.com>",
