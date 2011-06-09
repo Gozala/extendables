@@ -1,10 +1,10 @@
 {
   "name": "extendables",
   "id": "extendables",
-  "version": "0.1.2",
+  "version": "0.2.0",
   "description": "Simple and elegant inheritance in JS.",
   "keywords": [ "oop", "inheritance", "class", "object-oriented", "klass" ],
-  "author": "Irakli Gozalishvili <rfobic@gmail.com>",
+  "author": "Irakli Gozalishvili <rfobic@gmail.com> (http://jeditoolkit.com)",
   "repository": {
     "type": "git",
     "url": "git://github.com/Gozala/extendables.git",
@@ -13,18 +13,12 @@
   "bugs": {
     "web": "http://github.com/Gozala/extendables/issues/"
   },
-  "directories": {
-    "doc": "./docs",
-    "lib": "./lib",
-    "test": "./test"
-  },
   "devDependencies": {
     "test": ">=0.0.10"
   },
-  "main": "./lib/extendables.js",
+  "main": "./extendables.js",
   "engines": {
-    "node": "0.4.x",
-    "teleport": ">=0.2.0"
+    "node": "0.4.x"
   },
   "scripts": {
     "test": "node test/test-extendables.js"
