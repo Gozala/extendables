@@ -34,7 +34,7 @@ function Constructor(base) {
 
     value = base.apply(extendable, arguments);
     return value === undefined ? extendable : value;
-  }
+  };
 }
 function Extendable() {
   return this instanceof Extendable ? this : Object.create(Extendable.prototype);

@@ -8,7 +8,7 @@
 "use strict";
 
 exports["test basics"] = function(assert) {
-  var Extendable = require("extendables").Extendable;
+  var Extendable = require("../extendables.js").Extendable;
   var Foo = Extendable.extend({ foo: 'foo' });
   Foo.self = function () { return this; };
   var Bar = Foo.extend({
@@ -44,7 +44,7 @@ exports["test basics"] = function(assert) {
 };
 
 exports["test overridden properties"] = function(assert) {
-  var Extendable = require("extendables").Extendable;
+  var Extendable = require("../extendables.js").Extendable;
   var Foo = Extendable.extend({
     name: "foo"
   });
@@ -74,7 +74,7 @@ exports["test overridden properties"] = function(assert) {
 };
 
 exports["test argumentless"] = function(assert) {
-  var Extendable = require("extendables").Extendable;
+  var Extendable = require("../extendables.js").Extendable;
   var Base = Extendable.extend();
   var bas = new Base;
 
