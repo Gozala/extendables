@@ -10,7 +10,7 @@ Simple and elegant inheritance in JS.
 
     var Extendable = require('https!raw.github.com/Gozala/extendables/v0.2.0/extendables.js').Extendable
 
-## Examples ##
+## Usage ##
 
     var Extendable = require('https!raw.github.com/Gozala/extendables/v0.2.0/extendables.js').Extendable
     var Base = Extendable.extend({
