@@ -1,3 +1,4 @@
+[![build status](https://secure.travis-ci.org/Gozala/extendables.png)](http://travis-ci.org/Gozala/extendables)
 # extendables #
 
 Simple and elegant inheritance in JS.
