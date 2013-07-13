@@ -52,7 +52,7 @@ Simple and elegant inheritance in JS.
     console.log(b2.inherited())                 // -> "inherited property"
 
 
-    var Decedent = Base.extend({
+    var Descendant = Base.extend({
       constructor: function Decedent(options) {
         this.name = options.name;
       },
@@ -64,14 +64,14 @@ Simple and elegant inheritance in JS.
       },
       // overriddenBase: Base.prototype.overridden
     })
-    Decedent.implement({
+    Descendant.implement({
       bye: function bye() {
         return "Buy my dear " + this.name
       }
     })
 
-    var d1 = new Decedent({ name: "friend" })
-    console.log(d1 instanceof Decedent)       // -> true
+    var d1 = new Descendant({ name: "friend" })
+    console.log(d1 instanceof Descendant)       // -> true
     console.log(d1 instanceof Base)           // -> true
     console.log(d1 instanceof Extendable)     // -> true
     console.log(d1.inherited())               // -> "inherited property"
